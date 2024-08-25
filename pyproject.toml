@@ -10,11 +10,16 @@ requests = "^2.31.0"
 beautifulsoup4 = "^4.12.2"
 trafilatura = "^1.12.1"
 ollama = "^0.3.1"
+black = ">=24.8.0"
+readability-lxml = "^0.8.1"
 
 [tool.pyright]
 venvPath = "/Users/s/Library/Caches/pypoetry/virtualenvs"
 venv = "ackshually-V2Z4ByHR-py3.12"
 
+[tool.black]
+line-length = 90
+
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core", "black"]
 build-backend = "poetry.core.masonry.api"

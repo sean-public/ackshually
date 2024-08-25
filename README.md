@@ -9,7 +9,7 @@ You'll also require an instance of [Ollama](https://ollama.io) running somewhere
 
 ## Usage
 
-1. Make sure you have a running Ollama server accessible from your machine.
+1. Make sure you have a running Ollama server accessible from your machine. The env var `OLLAMA_HOST` should point at it "ollama_hostname_or_ip:port".
 2. Install the project dependencies with `poetry install`.
 3. Run the script with `poetry run ./ackshually.py`.
 4. The script will fetch a random Wikipedia article, scrape citations, and for each citation:
